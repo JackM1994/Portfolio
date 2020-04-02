@@ -20,7 +20,7 @@ console.log(intro);
                 container.style.transition="width 2s";
                 container.style.width="1100%";
                 secondContainer.style.transition="opacity 1s";
-                secondContainer.style.opacity="0";
+                secondContainer.style.display="0";
                 meIntro.style.transition="opacity 2s";
                 meIntro.style.opacity="1";
                 smallIntro.style.opacity="1";
