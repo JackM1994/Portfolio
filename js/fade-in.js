@@ -42,9 +42,9 @@ window.addEventListener('scroll', function(){
     if (window.scrollY > (mobileDiv.offsetTop + mobileDiv.offsetHeight)){
        mobileHeader.style.transition="opacity 5s";
        mobileHeader.style.opacity="1";
-       blockOne.style.transition="opacity 2s";
+       blockOne.style.transition="opacity 5s";
        blockOne.style.opacity="1";
-       mobileDescription.style.transition ="opacity 2.1s";
+       mobileDescription.style.transition ="opacity 5.1s";
        mobileDescription.style.opacity="1";
     }
     else if(window.scrollY < (mobileDiv.offsetTop + mobileDiv.offsetHeight)){
