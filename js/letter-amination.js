@@ -17,7 +17,7 @@ console.log(intro);
             if(window.scrollY >.5){
                
                 container.style.background ="";
-                container.style.transition="width 2s";
+                container.style.transition="width 1.3s";
                 container.style.width="1100%";
                 secondContainer.style.transition="opacity 1s";
                 secondContainer.style.display="0";
