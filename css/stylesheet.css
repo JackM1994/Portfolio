@@ -380,77 +380,41 @@ img{
     font-size: 70px;
 }
 
-#dashboard{
-    margin-top: 0px;
-    width: 100%;
-    padding-top: 210px;
-    padding-bottom: 250px;
-    background:linear-gradient(rgb(158,90,99), rgb(201,101,103));
-    transform-style: preserve-3d;
-   
-   
-}
-
-#dashboard-title{
-    color:#fff;
-    font-family: 'Comfortaa', cursive;
-    font-weight: bolder;
-    text-align: center;
-    text-transform: uppercase;
-    margin: auto 0;
-    font-family: 'Cabin', sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 38px;
-    letter-spacing: 2px;
-    z-index: 3;
-    margin-left: 30%;
-
-   
-  
-}
-
-#image-dash{
-    background: 
-    url('../images/dashboard.png')no-repeat  bottom;
-    height: 700px;
-    margin-top: -500px;
-    
-    overflow: hidden;
-    transition: .5s ease;
-}
-    
-  
-
-#image-dash:hover{
-   
-}
-
-
-
 #game-show{
-    margin-top: 10px;
-    width: 100%;
-    padding-top: 180px;
-    padding-bottom: 250px;
-    background:linear-gradient(450deg, rgb(254,249,199), rgb(252,225,129));
+   width: 100%;
+   margin: auto 0;
+   height: 450px;
+   background: url('../images/office-game.png') no-repeat center; 
 }
+.office{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 #game-title{
-    color:#fff;
+    color:#2d9da9;
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-    margin: auto 0;
     font-family: 'Cabin', sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 38px;
-    letter-spacing: 2px;
-    z-index: 3;
-    margin-left: 30%;
+    letter-spacing: 2px; 
+    padding-top: 225px;
     animation: glow 2s ease-in-out infinite alternate;
-    text-align: center;
+}
+.overlay{
+    height: 450px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(255, 255, 255, 0.7);
+}
+#game-show:hover .overlay{
+    opacity: 1;
 }
 @keyframes glow {
     from {
