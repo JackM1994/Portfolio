@@ -365,6 +365,7 @@ img{
 /* Project Section  */
 #projects{
     margin-top: 500px;
+    background: #fff;
 }
 #project-header{
     font-weight: bolder;
@@ -375,7 +376,7 @@ img{
     position: absolute;
     top: 527.4%;
     left:12.4%;
-    margin-top: 170px;
+    margin-top: -98%;
    
     font-size: 70px;
 }
@@ -393,7 +394,7 @@ img{
 }
 
 #game-title{
-    color:#2d9da9;
+    color:#fff;
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
     text-align: center;
@@ -401,7 +402,7 @@ img{
     font-family: 'Cabin', sans-serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 38px;
+    font-size: 42px;
     letter-spacing: 2px; 
     padding-top: 225px;
     animation: glow 2s ease-in-out infinite alternate;
@@ -411,19 +412,98 @@ img{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background: rgb(255, 255, 255, 0.7);
+    background: rgb(0, 0, 0, 0.7);
 }
 #game-show:hover .overlay{
     opacity: 1;
 }
 @keyframes glow {
     from {
-      text-shadow: 0 0 20px #2d9da9;
+      text-shadow: 0 0 30px #2d9da9;
     }
     to {
-      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+      text-shadow: 0 0 40px #34b3c1, 0 0 10px #4dbbc7;
     }
   }
+
+/* buttons for projects */
+.view-project,
+.live-demo{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 90px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    border: 4px solid #fff !important;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+    
+}
+.live-demo{
+    margin-left: 14%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.view-project:hover,
+.live-demo:hover{
+    color: #fff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+/* Photo Gallery */
+#photo-gallery{
+    width: 100%;
+    margin: auto 0;
+    height: 450px;
+    background: url('../images/moraine-lake.png') no-repeat center; 
+}
+.photo-title{
+    color:#fff;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 42px;
+    letter-spacing: 2px; 
+    padding-top: 225px;
+    opacity: 0;
+}
+
+  .cursor{
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -5px;
+    width: 2px;
+    /* Change colour of Cursor Here */
+    background-color: white;
+    color: #fff;
+    z-index: 1;
+    animation: flash 0.5s none infinite alternate;
+  }
+  @keyframes flash{
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+#photo-gallery:hover .overlay{
+    opacity: 1;
+}
+
 /* Media Queries */
 
 @media(min-width: 769px){
