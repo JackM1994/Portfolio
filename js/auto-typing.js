@@ -29,5 +29,5 @@ function autoType(elementClass, typingSpeed){
     // Now to start autoTyping just call the autoType function with the 
     // class of outer div
     // The second paramter is the speed between each letter is typed.   
-    autoType(".overlay",200);
+    autoType(".overlay-photo-gallery",200);
   });
