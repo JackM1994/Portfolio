@@ -13,7 +13,10 @@ body{
 
 }
 .nav-link{
-    color: red;
+    color: #17252a;
+}
+.nav-link:hover{
+    color: #f6b93b;
 }
 .logo{
     height: 70px;
@@ -152,8 +155,6 @@ body{
     margin-top: 100px;
     padding-top: 615px;
     background-color: #fff;
-    /* margin-right: 40px;
-    margin-left: 40px; 1024px   */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -162,20 +163,16 @@ body{
 
 #web-description{
     width: 100%;
-    /* background-color: #f3d250; */
     background-color: #68b2a0;
     position: absolute;
     top: 1%;
     padding-bottom: 240px;
-    /* padding-bottom: 270px; 1024px */
+   
    
 }
 
 #services{
-    /* font-size: 105px;
-    margin-top: -88px;
-    text-align: center;
-    padding-right: 45px;  1024px*/
+   
     font-weight: bolder;
     color: #000;
     font-family:'Poppins', sans-serif;
@@ -191,18 +188,11 @@ body{
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    /* position: absolute; */
     opacity: 0;
     padding-top: 50px;
     text-align: center;
     width: 100%;
-    /* top:13%;
-    right:0;
-    bottom:10%;
-    left: 27%;
-    width: 45%;
-    font-size: 36px;
-    opacity: 0; 1024px> */
+    
 }
 
 .white-block{
@@ -233,7 +223,7 @@ img{
 }
 
 #mobile-development{
-    /* width: 50%; 1024px */
+   
     width: 100%;
     padding-bottom: 200px;
     margin-top: 0px;
@@ -313,13 +303,6 @@ img{
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    /* position: absolute;
-    top:55%;
-    right:0;
-    bottom:10%;
-    left: 45%; 1024px */
-    /* width: 45%; */
-    /* font-size: 36px; */
     padding-top: 150px;
     align-items: center;
     text-align: center;
@@ -367,6 +350,7 @@ img{
     margin-top: 500px;
     background: #fff;
     margin-bottom: 100px;
+   
 }
 #project-header{
     font-weight: bolder;
@@ -384,6 +368,7 @@ img{
    margin: auto 0;
    height: 450px;
    background: url('../images/office-game.png') no-repeat center; 
+   background-color: #000;
 }
 .office{
     display: block;
@@ -505,7 +490,7 @@ img{
     height: 450px;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: .7s ease;
     background: linear-gradient(180deg,rgb(255,78,80, 0.5), rgb(249,212,35, 0.5))
 }
 
@@ -514,7 +499,7 @@ img{
     width: 100%;
     margin: auto 0;
     height: 450px;
-    background: url('../images/css-guide.png') no-repeat center;
+    background: url('../images/css-guide.png') no-repeat left;
     border-bottom: 1px solid #000;
 }
 .css-title{
@@ -633,8 +618,6 @@ img{
     font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-   
-   
     font-weight: 600;
     font-size: 42px;
     letter-spacing: 2px; 
@@ -668,7 +651,7 @@ img{
 
 /* footer*/
 .row {
-    background-color: #68b2a0;
+    background-color: #2b7a78;
     color: #fff;
 }
 .display-5{
@@ -722,6 +705,20 @@ img{
 
 /* Media Queries */
 
+@media(min-width: 440px){
+    .live-demo,
+    #css-btn-demo{
+        margin-left: 40%;
+    }
+    .email-icon{
+        margin-left: 40%;
+    }
+    .white-block-1{
+        top: 45%;
+    }
+}
+
+
 @media(min-width: 769px){
 
     #title-header{
@@ -735,6 +732,21 @@ img{
     #small-intro{
         left: 15%;
         width: 40%;
+    }
+    .live-demo,
+    #css-btn-demo{
+        margin-left: 58%;
+    }
+    .email-icon{
+        margin-left: 44%;
+    }
+    .white-block-1{
+        top: 46%;
+    }
+    .row{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
     }
 }
 
@@ -775,4 +787,170 @@ img{
         width: 35%;
         left: 10%;
     }
+
+    /* services section */
+    #web-development,
+    #projects,
+    #email-contact
+    {
+        margin-right: 40px;
+        margin-left: 40px;
+        flex-direction: row;
+    
+    }
+
+    #web-description{
+        padding-bottom: 270px;
+    }
+    #services,
+    #project-header{
+        font-size: 105px;
+        margin-top: -88px;
+        text-align: left;
+        padding-right: 45px;
+    }
+    #web-header{
+    position: absolute;
+    top:13%;
+    right:0;
+    bottom:10%;
+    left: 27%;
+    width: 45%;
+    font-size: 36px;
+    opacity: 0;
+    }
+    .white-block{
+        width: 10%;
+        top: 31%;
+        left: 36%;
+    }
+
+    #web-dev-description{
+        font-size: 18px;
+        padding-top: 220px;
+        padding-left: 160px;
+        padding-right: 50px;
+        text-align: left;
+        width: 80%; 
+        
+    }
+    img{
+        left: 35%;
+        -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+        filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+    }
+    #mobile-development,
+    #maintenance,
+    #photo-gallery,
+    #css-guide{
+        width: 50%;
+        display: flex;
+    }
+    #photo-gallery,
+    #css-guide{
+        border-bottom: 2px solid #000;
+        
+    }
+    #css-guide{
+        float:right;
+        margin-top: -450px;
+    }
+    #mobile-header{
+        position: absolute;
+        top:43%;
+        right:0;
+        bottom:10%;
+        left: 2%;
+        width: 45%;
+        font-size: 36px;
+    }
+    #mobile-dev-description{
+        font-size: 18px;
+        padding-top: 220px;
+        padding-left: 100px;
+        padding-right: 10px;
+        text-align: left;
+        width: 80%; 
+    }
+   
+    #maintenance-header{
+    position: absolute;
+    top:46.2%;
+    right:0;
+    bottom:10%;
+    left: 53%; 
+    width: 45%;
+    font-size: 36px;
+    text-align: center;
+    }
+
+    #main-dev-description{
+        font-size: 18px;
+        padding-top: 220px;
+        padding-left: 100px;
+        padding-right: 10px;
+        text-align: left;
+        width: 80%;
+    }
+
+    .white-block-1{
+        width: 10%;
+        top: 63%;
+        left: 10%;
+    }
+    .white-block-2{
+        width: 10%;
+        top: 63%;
+        left: 65%;
+        
+        
+    }
+
+    .mobile{
+        top: 86%;
+        left: 18%;
+        width: 400px;
+        height: 350px;
+    }
+    #css-guide{
+        border-right: 2px solid #000;
+    }
+
+    #photo-btn,
+    #css-btn-demo{
+        
+        margin-top: -50px;
+        margin-right: 20px;
+        float: right;
+      
+    }
+   
+
+    #game-show,
+    #photo-gallery,
+    #css-guide{
+        transition: transform .7s, filter 1.5s ease-in-out;
+       
+        
+    }
+    #game-show:hover,
+    #photo-gallery:hover,
+    #css-guide:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+    .email-icon{
+        margin-left: 46%;
+    }
+    .contact-info{
+        width: 75%;
+        text-align: center;
+        margin-left: 140px;
+    }
+   
+
+    
+   
+
+
 }
