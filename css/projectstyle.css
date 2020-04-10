@@ -220,8 +220,8 @@ img{
 .gallery-images,
 .friends-images{
     margin-top: 0px;
-    margin-left: -1px;
-    width: 300px;
+    margin-left: -2px;
+    width: 280px;
     height: 300px;
 }
 .friends-images{
@@ -320,6 +320,9 @@ img{
   .clearfix {
     clear: both;
   }
+  a{
+      color: #ffe400;
+  }
 /* Media Queries */
 @media(min-width: 769px){
     #project-title{
@@ -337,6 +340,10 @@ img{
     .friends-info{
         width: 75%;
         margin-left: 20px;
+    }
+    .github-info{
+        font-size: 24px;
+        text-align: center;
     }
     
     .languages{
@@ -370,6 +377,17 @@ img{
     }
     #slideshow-css{
         margin-top: 150px;
+    }
+    .other-projects{
+        font-size: 36px;
+    }
+    .github-image{
+        margin-left: 41%;
+    }
+    .row{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
     }
     @media(min-width: 1024px) {
         #project-title{
@@ -485,6 +503,14 @@ img{
         #right-top,
         #right-side{
             margin-left: 75%;
+        }
+        .other-projects{
+            margin-left: 3%;
+        }
+       
+        .github-image{
+            margin-top: 30px;
+            margin-left: 47%;
         }
     }
 }

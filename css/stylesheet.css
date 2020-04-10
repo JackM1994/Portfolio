@@ -435,8 +435,8 @@ img{
 .view-project:hover,
 .live-demo:hover{
     color: #fff !important;
-    background: #f6b93b;
-    border-color: #f6b93b !important;
+    background: #51ddfc;
+    border-color: #51ddfc!important;
     transition: all 0.4s ease 0s;
 }
 
@@ -597,8 +597,8 @@ img{
 #css-btn:hover,
 #css-btn-demo:hover{
     color: #fff !important;
-    background: #f6b93b;
-    border-color: #f6b93b !important;
+    background: #51ddfc;
+    border-color: #51ddfc !important;
     transition: all 0.4s ease 0s;
 }
 
