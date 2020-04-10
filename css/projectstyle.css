@@ -47,8 +47,14 @@ body{
     background: url(../images/moraine-lake.png) no-repeat;
     overflow: hidden;
 }
+#project-3{
+    margin-top: 570px;
+    background:url(../images/friends-main.png) no-repeat center ;
+    overflow: hidden;
+}
 #project-one,
-#project-two{
+#project-two,
+#project-three{
     font-size: 32px;
     font-family: 'Poppins', 'sans-serif';
     border: 1px solid;
@@ -65,7 +71,8 @@ body{
    
 }
 #css-about-section,
-#gallery-about-section{
+#gallery-about-section,
+#friends-about-section{
     margin-top: -10px;
     background: white;
     height: 60vh;
@@ -74,14 +81,17 @@ body{
 }
 
 #css-about,
-#gallery-about{
+#gallery-about,
+#friends-about{
     font-family:'Comfortaa', cursive;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 32px;
 }
 .css-info,
-.gallery-info{
+.gallery-info,
+.friends-info,
+.github-info{
     font-family: 'Poppins', 'sans-serif';
     padding-top: 10px;
     padding-left: 20px;
@@ -184,7 +194,8 @@ body{
 }
 /* slideshow container */
 #slideshow-css,
-#slideshow-gallery{
+#slideshow-gallery,
+#slideshow-friends{
   border-top: 1px solid #000;
    position: relative;
     margin-top: 380px;
@@ -192,7 +203,8 @@ body{
     background-color: #fff;
 }
 #slideshow-css > div,
-#slideshow-gallery > div{
+#slideshow-gallery > div,
+#slideshow-friends > div{
   position: absolute;
   top: 75%;
   left: 10px;
@@ -205,11 +217,16 @@ img{
     margin-left: 10%;
     margin-top: 40px;
 }
-.gallery-images{
+.gallery-images,
+.friends-images{
     margin-top: 0px;
     margin-left: -1px;
     width: 300px;
     height: 300px;
+}
+.friends-images{
+    width: 350px;
+    margin-left: 5px;
 }
 .caption{
    text-align: center;
@@ -225,7 +242,84 @@ img{
     /* margin-right: 10px; */
 
 }
-
+/* github */
+#github-section{
+    height: 90vh;
+    width: 100%;
+    margin-top: 330px;
+    border-top: #63cc82 2px solid;
+}
+#other-p{
+    margin-top: 100px;
+}
+.other-projects{
+    font-family:'Play', sans-serif;
+    padding-top: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.github-image{
+    padding-bottom: 25px;
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 1%;
+}
+.github-info{
+    margin-bottom: 40px;
+}
+/* footer*/
+.row {
+    background-color: #2b7a78;
+    color: #fff;
+}
+.display-5{
+    padding-left: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+}
+.social-media{
+    margin-top: 10px;
+    text-align: center;
+}
+.social-media ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    display: inline-block;
+    color: #fff;
+    margin: auto 0;
+  }
+  
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+  a.twitter {
+    background-image: url(../images/twitter\ copy.svg);
+  }
+  a.linkedin {
+    background-image: url(../images/linkedin\ copy.svg);
+  }
+  a.github {
+    background-image: url(../images/github\ copy.svg);
+  }
+  a.social:hover {
+    opacity: 1;
+  }
+  .clearfix {
+    clear: both;
+  }
 /* Media Queries */
 @media(min-width: 769px){
     #project-title{
@@ -233,12 +327,14 @@ img{
     }
     
     #project-one,
-    #project-two{
+    #project-two,
+    #project-three{
         width: 75%;
         margin-left: 70px;
     }
     .css-info,
-    .gallery-info{
+    .gallery-info,
+    .friends-info{
         width: 75%;
         margin-left: 20px;
     }
@@ -254,7 +350,8 @@ img{
     .live-demo{
         margin-left: 75%;
     }
-    .gallery-images{
+    .gallery-images,
+    .friends-images{
         width: 450px;
         margin-left: 20%;
     }
@@ -287,7 +384,8 @@ img{
         }
        
         #project-1,
-        #project-2{
+        #project-2,
+        #project-3{
             background: url('../images/css-guide-landscape.png') no-repeat left;
             background-size: contain;
             overflow: hidden;
@@ -300,22 +398,30 @@ img{
             background-size: cover;
             margin-top: 110px;
         }
+        #project-3{
+            background: url('../images/friends-main.png')no-repeat;
+            background-size: cover;
+            margin-top: 110px;
+        }
         #css-layout,
-        #gallery-layout{
+        #gallery-layout,
+        #friends-layout{
             margin-top: -500px;
             height: 450px;
          
           
         }
         #project-one,
-        #project-two{
+        #project-two,
+        #project-three{
             background: #ffe400;
             width: 20%;
             margin-left: 40%;
             border-radius: 0px 0px 15px 15px;
             
         }
-        #first-project{
+        #first-project,
+        #third-project{
             display: flex;
             flex-direction: row;
         }
@@ -325,7 +431,8 @@ img{
         }
 
         #css-about-section,
-        #gallery-about-section{
+        #gallery-about-section,
+        #friends-about-section{
             display: flex;
             width: 50%;
            
@@ -333,7 +440,8 @@ img{
         }
         
         #slideshow-css,
-        #slideshow-gallery{
+        #slideshow-gallery,
+        #slideshow-friends{
             margin-top:70px;
             display: flex;
             width: 50%;
@@ -346,15 +454,20 @@ img{
         }
        
         img,
-        .gallery-images{
+        .gallery-images,
+        .friends-images{
             margin-top: -330px;
             
         }
-        .gallery-images{
+        .gallery-images,
+        .friends-images{
             margin-left: 2px;
             width: 100%;
             height: 450px;
             margin-top: -340px;
+        }
+        .friends-images{
+            margin-left: -2px;
         }
         .css-languages{
             padding-top: 20px;
