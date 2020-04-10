@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -54,12 +56,15 @@
     
               <!-- first project -->
               
-
+             
                 <div id="project-1"> 
-                  <h4 class="display-2" id="project-one">
-                    CSS Guide
-                  </h4> 
+                  <div id="css-layout">
+                    <h4 class="display-2" id="project-one">
+                      CSS Guide
+                    </h4> 
+                  </div>
                 </div>
+                <div id="first-project">
                 <div id="css-about-section">
                     <div class="css-about-info">
                         <button class="repo">Repo</button>
@@ -78,32 +83,101 @@
 
 
                       </p>
-                      <span class="languages">Languages used<b>:</b> </span>
-                      <div class="css-languages"> 
-                              <label class="sass">SASS</label>  
-                              <label class="css">CSS</label>
-                              <label class="html">HTML</label>
-                       </div>
-                     
-                      <button class="live-demo">Live Demo</button>
-                    </div>
+                      <div class="language-sector">
+                          <span class="languages">Languages used <b>:</b> </span>
+                          <div class="css-languages"> 
+                                  <label class="sass">SASS</label>  
+                                  <label class="css">CSS</label>
+                                  <label class="html">HTML</label>
+                           </div>
+                         
+                          <button class="live-demo">Live Demo</button>
+                        </div>
+                      </div>
+                    </div> 
                     
                     <!-- Slideshow -->
                     <div id="slideshow-css">
                       <div>
-                        <img src="images/buttons.png" style="width:370px" style="height: 300px"alt="button-section">
+                        <img class="css-first-image" src="images/buttons.png" style="width:370px" style="height: 300px"alt="button-section" >
+                        <span class="caption">Button Elements</span>
                       </div>
 
                       <div>
                         <img src="images/form.png" alt="form-section">
+                        <span class="caption">Form Elements</span>
                       </div>
 
                       <div>
                         <img src="images/typography.png"style="width:370px" style="height: 300px" alt="typography">
+                        <span class="caption">Typography</span>
                       </div>
 
                     </div>
+                 
+                </div>
+                <div id="project-2"> 
+                    <div id="gallery-layout">
+                      <h4 class="display-2" id="project-two">
+                        Photo Gallery
+                      </h4> 
+                    </div>
+                  </div>
+                  <div id="second-project">
+                  <div id="gallery-about-section">
+                      <div class="gallery-about-info">
+                          <button id="right-top" class="repo">Repo</button>
+                        <h3 id="gallery-about">About
+                           
+                        </h3>
+  
+                        <p class="gallery-info">This project is a simple photo gallery.
+                                                The project displays 12 images in a grid form when the screen is greater than 769px.
+                                                Using JQuery plugin, the user can search for specific images. Once the user clicks on an image, a slideshow screen appears.
+                                                The slideshow can be manually or automatically controlled. If the user so wishes to download an image, 
+                                                they are given the download option in the slideshow view.
+  
+  
+                        </p>
+                        <div class="language-sector">
+                            <span class="languages">Languages used <b>:</b> </span>
+                            <div class="css-languages"> 
+                                    <label class="jquery">jQuery</label>  
+                                    <label class="css">CSS</label>
+                                    <label class="js">JavaScript</label>
+                                    <label class="html">HTML</label>
+                             </div>
+                           
+                            <button id="right-side" class="live-demo">Live Demo</button>
+                          </div>
+                        </div>
+                      </div> 
+                      
+                      <!-- Slideshow -->
+                      <div id="slideshow-gallery">
+                        <div>
+                          <img class="gallery-images" src="images/gallery-main.png" alt="gallery's-main page" >
+                          <span class="caption">Gallery's Main Page</span>
+                        </div>
+  
+                        <div>
+                          <img class="gallery-images"src="images/gallery-search.png" alt="gallery-search">
+                          <span class="caption">Search filter</span>
+                        </div>
+  
+                        <div>
+                          <img class="gallery-images"src="images/gallery-slideshow.png" alt="gallery-slideshow">
+                          <span class="caption">Gallery Slideshow</span>
+                        </div>
+  
+                      </div>
+                   
+                  </div>
+  
+
+                
                 <!-- JS Files -->
                <script src="js/slide-show.js"></script>
+               <script src="js/slide-in-fade.js"></script>
            
     </body>

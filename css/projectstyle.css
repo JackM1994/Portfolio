@@ -2,24 +2,15 @@ body{
     padding:0;
     margin:0;
     background:white;
-    
-   
-    
 }
 
-
-
-#project-headline{
-    
-    
+#project-headline{ 
     margin-bottom: 50px;
     background-color: #1a1a1d;
     background-size: cover;
     padding-top: 25px;
     overflow:hidden;
     transition: width 2s;
-
-   
 }
 #first-container{
   width: 100vw;
@@ -47,30 +38,34 @@ body{
 }
        
 #project-1{
-  
     background: url(../images/css-guide.png) no-repeat top left;
     overflow: hidden;
     background-size: cover;
-
 }
-#project-one{
+#project-2{
+    margin-top: 570px;
+    background: url(../images/moraine-lake.png) no-repeat;
+    overflow: hidden;
+}
+#project-one,
+#project-two{
     font-size: 32px;
     font-family: 'Poppins', 'sans-serif';
-    border: 1px solid #63cc82;
+    border: 1px solid;
     width: 95%;
     margin-top: 500px;
     margin-left: 15px;
-   
     padding-top: 10px;
     padding-bottom: 20px;
     border-radius: 15px 15px 0 0;
     text-align: center;
-    background: #51ddfc;
+    background:  #05386B;
     color: #fff;
-    text-shadow: 0 4px 4px 4px #000;
+    text-shadow: 0 1px 1px rgb(206, 201, 201);
    
 }
-#css-about-section{
+#css-about-section,
+#gallery-about-section{
     margin-top: -10px;
     background: white;
     height: 60vh;
@@ -78,13 +73,15 @@ body{
 
 }
 
-#css-about{
+#css-about,
+#gallery-about{
     font-family:'Comfortaa', cursive;
     padding-top: 20px;
     padding-left: 20px;
     font-size: 32px;
 }
-.css-info{
+.css-info,
+.gallery-info{
     font-family: 'Poppins', 'sans-serif';
     padding-top: 10px;
     padding-left: 20px;
@@ -101,6 +98,7 @@ body{
     background-color: #63cc82;
     color: white;
 }
+
 
 .repo{
     margin-left: 60%;
@@ -122,6 +120,7 @@ body{
     cursor: pointer;
 }
 .languages{
+   
     font-weight: 500;
     font-family: 'Poppins', 'sans-serif';
     padding-left: 20px;
@@ -129,6 +128,30 @@ body{
 }
 .css-languages{
     padding-left: 20px;
+}
+.jquery{
+    border: 2px solid #131B28;
+    background: #131B28;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-family: 'Viga', sans-serif;
+
+}
+.js{
+    border: 2px solid #F0DB4F;
+    background: #F0DB4F;
+    color: #323330 ;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+
 }
 .sass{
     border: 2px solid  #cd6799;
@@ -160,16 +183,195 @@ body{
     background:  #f06529;
 }
 /* slideshow container */
-#slideshow-css{
+#slideshow-css,
+#slideshow-gallery{
   border-top: 1px solid #000;
    position: relative;
-    margin-top: 40px;
+    margin-top: 380px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    background-color: #fff;
 }
-#slideshow-css > div{
-    position: absolute;
+#slideshow-css > div,
+#slideshow-gallery > div{
+  position: absolute;
   top: 75%;
   left: 10px;
   right: 10px;
   bottom: 0; 
+ 
+}
+
+img{
+    margin-left: 10%;
+    margin-top: 40px;
+}
+.gallery-images{
+    margin-top: 0px;
+    margin-left: -1px;
+    width: 300px;
+    height: 300px;
+}
+.caption{
+   text-align: center;
+    color: #000;
+    font-weight: bolder;
+    /* margin-left: 10%; */
+    font-family: 'Poppins', 'sans-serif';
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-bottom: 20%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    /* margin-right: 10px; */
+
+}
+
+/* Media Queries */
+@media(min-width: 769px){
+    #project-title{
+        font-size: 120px;
+    }
+    
+    #project-one,
+    #project-two{
+        width: 75%;
+        margin-left: 70px;
+    }
+    .css-info,
+    .gallery-info{
+        width: 75%;
+        margin-left: 20px;
+    }
+    
+    .languages{
+        padding-left: 40px;
+        font-weight: 700;
+    }
+    .css-languages{
+        padding-top: 100px;
+    }
+    .repo,
+    .live-demo{
+        margin-left: 75%;
+    }
+    .gallery-images{
+        width: 450px;
+        margin-left: 20%;
+    }
+    img
+    {
+        margin-left: 30%;
+    }
+    .css-first-image{
+        height: 350px;
+        width: 450px;
+    }
+    .caption{
+        font-size: 26px;
+        color: black;
+        margin-left: 35%;
+    }
+    #slideshow-css{
+        margin-top: 150px;
+    }
+    @media(min-width: 1024px) {
+        #project-title{
+            font-size: 140px;
+        }
+
+        #first-project{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+       
+        #project-1,
+        #project-2{
+            background: url('../images/css-guide-landscape.png') no-repeat left;
+            background-size: contain;
+            overflow: hidden;
+            margin-top: -50px;
+            border-bottom: 2px groove #63cc82;
+            height: 60vh;
+        }
+        #project-2{
+            background: url('../images/moraine-lake.png') no-repeat left bottom;
+            background-size: cover;
+            margin-top: 110px;
+        }
+        #css-layout,
+        #gallery-layout{
+            margin-top: -500px;
+            height: 450px;
+         
+          
+        }
+        #project-one,
+        #project-two{
+            background: #ffe400;
+            width: 20%;
+            margin-left: 40%;
+            border-radius: 0px 0px 15px 15px;
+            
+        }
+        #first-project{
+            display: flex;
+            flex-direction: row;
+        }
+        #second-project{
+            display:flex;
+            flex-direction: row-reverse;
+        }
+
+        #css-about-section,
+        #gallery-about-section{
+            display: flex;
+            width: 50%;
+           
+            margin-top:0px;
+        }
+        
+        #slideshow-css,
+        #slideshow-gallery{
+            margin-top:70px;
+            display: flex;
+            width: 50%;
+            padding-right: 10px;
+            height: 80vh;
+            border-top: none;
+        }
+        #slideshow-gallery{
+            margin-right: 5px;
+        }
+       
+        img,
+        .gallery-images{
+            margin-top: -330px;
+            
+        }
+        .gallery-images{
+            margin-left: 2px;
+            width: 100%;
+            height: 450px;
+            margin-top: -340px;
+        }
+        .css-languages{
+            padding-top: 20px;
+        }
+        .repo,
+        .live-demo{
+            margin-top: 0px;
+           display: none;
+           
+        }
+       
+        .live-demo{
+            padding-top: -40px;
+        }
+        #right-top,
+        #right-side{
+            margin-left: 75%;
+        }
+    }
 }

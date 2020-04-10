@@ -9,3 +9,14 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow-css');
 }, 3000);
+
+$("#slideshow-gallery> div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow-gallery > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow-gallery');
+}, 3000);
