@@ -746,7 +746,7 @@ img{
 }  
 .scene{
     width: 100%;
-    height: 500px;
+    height: 700px;
     margin: 40px 0;
     perspective: 600px;
     border: #013220 solid 10px;
@@ -811,7 +811,7 @@ img{
 .job-title{
     color: #000;
     font-size: 22px;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-right: 50px;
     z-index: 2;
 }
@@ -826,20 +826,50 @@ img{
     font-style: oblique;
 }
 .job-duties,
-ul,
-li{
+.points,
+.point{
     font-size: 16px;
     margin-top: 2px;
     margin-right: 50px;
 }
-ul,
-li{
+.points,
+.point{
     margin-right: 20px;
     margin-top: 10px;
     color: #000;
+   
 }
 
-
+#landtec-skills{
+    height: 600px;
+    width: 100%;
+    background: #17252a;
+    color: #fff;
+    margin-top:-40px;
+    
+}
+.skills-land{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 48px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Poppins', 'sans-serif';
+}
+.operator{
+    padding-top: 40px;
+    list-style: none;
+    font-size: 20px;
+   
+}
+.skid-steer{
+  border-radius: 50%;
+  border: solid 5px #fff;
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-left: 15%;
+}
 
 
 
