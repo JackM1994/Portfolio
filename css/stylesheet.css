@@ -657,6 +657,7 @@ img{
 .row {
     background-color: #2b7a78;
     color: #fff;
+    margin-right:1px;
 }
 .display-5{
     padding-left: 15px;
@@ -710,7 +711,7 @@ img{
   /* CV Section */
 #cv-headline{
   margin-bottom: 50px;
-  background-color: #19181a;
+  background-color: #3aafa9;
   /* background: url(../images/cv..jpg) no-repeat; 1024px*/
   background-size: cover;
   padding-top: 25px;
@@ -730,7 +731,7 @@ img{
     position: relative;
     text-transform: uppercase;
     /* text-shadow: -15px 5px 20px #a16e83; */
-    color: #cebc81;
+    color: #17252a;
     letter-spacing: -0.05em;
     font-family: 'Poppins',sans-serif;
     user-select: none;
@@ -739,8 +740,18 @@ img{
     transition: all 0.25s ease-out;
     text-align:center;
 }
+#work-experience-title{
+    margin-top: 60px;
+    margin-bottom: -69px;
+}
+#work-experience-section{
+    margin-top: 190px;
+  
+}
+
 .work-experience{
     background-color:#fff;
+   
 
    
 }  
@@ -758,6 +769,7 @@ img{
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    perspective: 600px;
    
 }
 .card.is-flipped {
@@ -800,6 +812,10 @@ img{
     font-weight: bolder;
     cursor: pointer;
 }
+.view-job:hover{
+    transition: .3s ease;
+    background: #2b5329;
+}
 
 .flip-card-back{
   
@@ -841,11 +857,12 @@ img{
 }
 
 #landtec-skills{
-    height: 600px;
+    height: 1000px;
     width: 100%;
     background: #17252a;
-    color: #fff;
-    margin-top:-40px;
+    color: pink;
+    margin-top:240px;
+   
     
 }
 .skills-land{
@@ -855,6 +872,7 @@ img{
     letter-spacing: 2px;
     color: #fff;
     font-family: 'Poppins', 'sans-serif';
+    margin-right: 15px;
 }
 .operator{
     padding-top: 40px;
@@ -869,9 +887,26 @@ img{
   display: block;
   margin-top: 10px;
   margin-left: 15%;
+  margin-right: 35%;
+}
+.large-div{
+    display: none;
 }
 
-
+.large-div-img,
+ .large-title,
+ .large-date,
+ .job-duties-large,
+ .skills-large,
+ .job-title-date{
+    display: none;
+    
+}
+.large-date,
+.large-title,
+.job-title-date{
+    opacity: 0;
+}
 
 
 /* Media Queries */
@@ -919,6 +954,39 @@ img{
         flex-flow: wrap;
         justify-content: center;
     }
+    #work-experience-title{
+        text-align: left;
+    }
+    .job-title,
+    .dates{
+        margin-left: 35px;
+    }
+    .job-duties{
+        text-align: center;
+    }
+    .skills-land{
+       text-align: center;
+    }
+    .skills,
+    .skid-steer{
+        display: inline-block;
+    }
+    .skills{
+        padding-left: 20px;
+    }
+    .skid-steer{
+        margin-left: 65px;
+    }
+    #s-operator{
+        margin-left: -65px;
+        padding-left: 40px;
+        
+    }
+    #skid-op{
+        margin-left: 240px;
+    }
+
+   
 }
 
 @media(min-width: 1024px){
@@ -1119,9 +1187,386 @@ img{
         margin-left: 140px;
     }
    
+   
+    /* resume */
+
+    #cv-title{
+        font-size: 130px;
+    }
+    .scene,
+    .card,
+    .card-face,
+    .view-job,
+    .flip-card-front,
+    .flip-card-back{
+        display:none;
+    }
+    #work-experience-section{
+        margin-top: 290px;
+        
+    }
+    #work-experience-title{
+        font-size: 100px;
+       
+    }
+    .work-experience{
+       
+        
+        margin-left: 125px;
+        margin-right: 25px;
+        margin-bottom: 1000px;
+        height: 1200px;
+       
+    }
+    #block{
+        padding: 20px;
+        width: 10%;
+        background: #2b5329;
+        position: absolute;
+        top: -40%;
+        left: 2%;
+    }
+   
+    #large-div{
+        display: block;
+        width: 100%;
+        margin-top: 1300px;
+        position: relative;
+        
+    }
+    .large-div-img{
+        display: block;
+        position: relative;
+        width: auto;
+        margin-top: -1010px;
+        height: 550px;
+        margin-left: 170px;
+        margin-bottom: 10px;
+       opacity: 0;
+        transition: ease-in-out 4s;
+        filter: none;
+      
+    }
+    .large-div-img:hover{
+        border: 20px solid #013220
+
+    }
+   #overlay-img{
+       background: #2b5329;
+       z-index: 2;
+      display:none;
+       position: absolute;
+       top: 181%;
+       left: 47.1%;
+       width:0px;
+       margin-top: -1000px;
+       height: 550px;
+   -webkit-animation: slideInLeft 3s ease-in;
+        -moz-animation: slideInLeft 3s ease-in;
+        -o-animation: slideInLeft 3s ease-in;
+        -ms-animation: slideInLeft 3s ease-in;
+        animation: slideInLeft 2s ease-in-out;
+}
+.large-date,
+.large-title,
+.job-title-date{
+    opacity: 1;
+}
+
+
+@-webkit-keyframes slideInLeft {
+    0% { width: 0px; }
+    35%{ width: 440px;}
+    70%{width: 0px;}
+}
+@-moz-keyframes slideInLeft {
+    0% { width: 0px; }
+    35%{ width: 440px;}
+    70%{width: 0px;}
+}
+@-ms-keyframes slideInLeft {
+    0% { width: 0px; }
+    35%{ width: 440px;}
+    70%{width: 0px;}
+}
+@-o-keyframes slideInLeft {
+    0% { width: 0px; }
+    35%{ width: 440px;}
+    70%{width: 0px;}}
+}
+@keyframes slideInLeft {
+    0% { width: 0px; }
+    35%{ width: 440px;}
+    70%{width: 0px;}
+   
+}
+    .job-title-date{
+        height: 160px;
+        width: 300px;
+        display: block;
+        position: absolute;
+        top: 15%;
+        text-align: center;
+        margin-left: 10px;
+        
+    }
+    .large-title,
+    .large-date{
+        padding-top: 10px;
+        position: relative;
+        color: #2b5329;
+        font-size: 40px;
+        display: block;
+    }
+    .large-date{
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    .job-duties-large{
+        display: block;
+        background: #7e685a;
+        height: 600px;
+        width: 30%;
+        color: #fff;
+        position: absolute;
+        top: 120%;
+        left: -12%;
+        opacity: 0;
+        transition: ease-in 3s;
+    }
+    .job-duties-large:hover{
+        border: solid 10px #013220;
+        transition : .2s ease-in;
+    }
+    
+    #overlay-duties{
+        display: none;
+        background:#013220;
+        height: 640px;
+        /* width: 30%; */
+        position: absolute;
+        left: -12%;
+        top: 100%;
+        animation:  slideIn 4s;
+        opacity: 0;
+      
+    }
+    #skills-overlay{
+        display: none;
+        background: #013220;
+        height: 400px;
+        /* width: 30%; */
+        position: absolute;
+        top: 135.5%;
+        left: 33.5%;
+        animation: slideInSkills 4s;
+        opacity: 0;
+
+    }
+    @keyframes slideInSkills {
+      
+        0%{
+          
+            width: 0%;
+            opacity: 0;
+           
+        }
+        20%{
+            width: 50%;
+            transform: scalex(1.5);
+            margin-left: 150px;
+            
+        }
+        40%{
+            margin-left: 350px;
+            opacity: 1;
+        }
+        60%{
+           
+            margin-left: 350px;
+            opacity: 1;
+            
+        }
+        80%{
+          
+            margin-left: 550px;
+        }
+        100%{
+            transform: scaleX(-1);
+            visibility: hidden;
+            display: none;
+            /* margin-left: 120px; */
+            z-index: 0;
+            animation-delay: 4s;
+           
+            
+        }
+       
+        
+       
+    }
 
     
+
+
+
+
+
+
+
+    @keyframes slideIn {
+      
+        0%{
+          
+            width: 0%;
+            opacity: 0;
+           
+        }
+        20%{
+            width: 50%;
+            transform: scalex(1);
+            margin-left: -150px;
+        }
+        40%{
+            margin-left: 50px;
+            opacity: 1;
+        }
+        60%{
+           
+            margin-left: 50px;
+            opacity: 1;
+            
+        }
+        80%{
+          
+            margin-left: 470px;
+        }
+        100%{
+            transform: scaleX(-1);
+            visibility: hidden;
+            display: none;
+            /* margin-left: 120px; */
+            z-index: 0;
+            animation-delay: 4s;
+           
+            
+        }
+       
+        
+       
+    }
+
+    
+    .jd{
+        font-size: 50px;
+        font-family: 'Poppins', 'sans=serif';
+        text-align: center;
+        color: #000;
+        margin-top: -65px;
+        font-weight: 500;
+    }
+    .jd-ul{
+        list-style: none;
+       
+    }
+    .jd-li{
+        margin-right:10px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    #landtec-skills{
+        display: none;
+    }
+    .skills-large{
+        width: 750px;
+        height: 400px;
+        background: #679267;
+        position: absolute;
+        top: 135.5%;
+        left: 38.5%;
+        font-family:'Poppins','sans-serif';
+        display: block;
+        transition: ease-in-out 4s;
+        opacity: 0;
+    }
+    .skills-large:hover{
+        border: 15px solid #013220;
+        transition: .1s ease;
+    }
+    .skills-title-large{
+        color: #fff;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+       
+    }
+    .skills-large-ul{
+        list-style-type: none;
+       
+    }
+    .skills-img{
+        display: inline-block;
+        padding-right: 110px;
+        padding-left: 15px;
+        padding-top: 200px;
+        text-align: center;
+       
+       
+    }
+   
+   
+    .skills-larger{
+        color: #fff;
+        font-weight: 600;
+        padding-top: 90px;
+        font-size: 20px;
+        padding-right: 3px;
+       
+    }
+  
+
+    .skills-images{
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        filter: none;
+    }
+    #time-manage{
+        width: 20%;
+        padding-right: 40px;
+        text-align: center;
+        padding-left: 50px;
+    }
+    #team-manage{
+        width: 20%;
+        margin-left: 20px;
+        padding-left: 150px;
+    }
+    #skills-time{
+        left: 40%;
+        
+    }
+    #skills-team{
+        left: 75%;
+        
+    }
+    .job-title-date{
+        animation-duration: 3s;
+        animation-fill-mode: both;
+    }
+    .fadeInBottom{
+        animation-name: fadeInBottom
+    }
+    @keyframes fadeInBottom{
+        from{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to{
+            opacity: 1;
+        }
+    }
    
 
-
-}
