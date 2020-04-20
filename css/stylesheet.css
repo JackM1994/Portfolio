@@ -717,9 +717,10 @@ img{
   padding-top: 25px;
   overflow:hidden;
   transition: width 2s;
+
 }
 #first-cv-container{
-    width: 100vw;
+    width: auto;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -727,7 +728,7 @@ img{
     margin-bottom: 200px;
   }
 
-  #cv-title {
+  #cv-title{
     position: relative;
     text-transform: uppercase;
     /* text-shadow: -15px 5px 20px #a16e83; */
@@ -740,13 +741,25 @@ img{
     transition: all 0.25s ease-out;
     text-align:center;
 }
-#work-experience-title{
+#work-experience-title,
+#college-title{
     margin-top: 60px;
     margin-bottom: -69px;
 }
-#work-experience-section{
+#college-title{
+    margin-bottom: -55px;
+    font-size: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+#work-experience-section,
+#college-section{
     margin-top: 190px;
   
+}
+.college-experience{
+    padding-bottom: 300px;
 }
 
 .work-experience{
@@ -755,14 +768,27 @@ img{
 
    
 }  
-.scene{
+.scene,
+.scene-pat,
+.scene-college{
     width: 100%;
     height: 700px;
     margin: 40px 0;
     perspective: 600px;
     border: #013220 solid 10px;
 }
-.card{
+.scene-pat{
+    margin-top: -40px;
+    height: 565px;
+    border: #2d9da9 solid 10px;
+}
+.scene-college{
+    height: 500px;
+    border: #800000 solid 10px;
+}
+.card,
+.card-pat,
+.card-college{
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -774,6 +800,12 @@ img{
 }
 .card.is-flipped {
     transform: rotateY(180deg);
+  }
+  .card-pat.is-flipped{
+      transform: rotateY(180deg);
+  }
+  .card-college.is-flipped{
+      transform: rotateY(180deg);
   }
 .card-face{
     position: relative;
@@ -788,11 +820,21 @@ img{
 }
 .flip-card-front{
     background: url(../images/landtec-cover.jpeg) no-repeat center ;
-    padding-bottom: 200px;
-    
-    
+    padding-bottom: 400px;
+
 }
-.view-job{
+.flip-card-front-2{
+    background: url(../images/patricks-well.jpg)no-repeat;
+    height: 800px;
+}
+.flip-card-front-college{
+    background: url(../images/nuig2.jpg) no-repeat;
+    padding-bottom: 1000px;
+    height: 800px;
+}
+.view-job,
+.view-job-pat,
+.view-degree{
     display: inline-block;
     margin-top: 40%;
     color: #fff !important;
@@ -812,24 +854,52 @@ img{
     font-weight: bolder;
     cursor: pointer;
 }
+.view-job-pat:hover{
+    transition: .3s ease;
+    background: #2d9da9;
+}
 .view-job:hover{
     transition: .3s ease;
     background: #2b5329;
 }
+.view-degree:hover{
+    transition: .3s ease;
+    background: #800000;
+}
 
-.flip-card-back{
+.flip-card-back,
+.flip-card-back-2,
+.flip-card-back-college{
   
    transform: rotateY(-180deg);
    line-height: -2px;
    margin-top: -510px;
    margin-right: 105px;
 }
-.job-title{
+.flip-card-back-2{
+    margin-top: -760px;
+    text-align: center;
+
+}
+.flip-card-back-college{
+    margin-top: -950px;
+}
+.job-title,
+.job-title-pat,
+.college-title{
     color: #000;
     font-size: 22px;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 40px;
     z-index: 2;
+}
+
+.job-title-pat
+.college-title{
+    margin-top: -105px;
+    padding-top: -20px;
+    text-align: center;
+    
 }
 .dates{
     margin-top: 0px;
@@ -837,19 +907,26 @@ img{
     color: #000;
     margin-right: 60px;
 }
-.job-duties{
+.job-duties,
+.job-duties-pat,
+.degree{
     color: #013220;
     font-style: oblique;
 }
 .job-duties,
 .points,
-.point{
+.point,
+.job-duties-pat,
+.points-pat,
+.point-pat{
     font-size: 16px;
     margin-top: 2px;
     margin-right: 50px;
 }
 .points,
-.point{
+.point,
+.points-pat,
+.point-pat{
     margin-right: 20px;
     margin-top: 10px;
     color: #000;
@@ -889,24 +966,15 @@ img{
   margin-left: 15%;
   margin-right: 35%;
 }
-.large-div{
+#large-div,
+#large-div-pat
+{
     display: none;
+    visibility: hidden;
+    z-index: -1;
 }
 
-.large-div-img,
- .large-title,
- .large-date,
- .job-duties-large,
- .skills-large,
- .job-title-date{
-    display: none;
-    
-}
-.large-date,
-.large-title,
-.job-title-date{
-    opacity: 0;
-}
+
 
 
 /* Media Queries */
@@ -985,6 +1053,7 @@ img{
     #skid-op{
         margin-left: 240px;
     }
+
 
    
 }
@@ -1198,27 +1267,43 @@ img{
     .card-face,
     .view-job,
     .flip-card-front,
-    .flip-card-back{
+    .flip-card-back,
+    .scene-pat,
+    .scene-college
+    {
         display:none;
     }
+    #large-div,
+    #large-div-pat,
+    #large-div-college{
+        display: block;
+        visibility: visible;
+        z-index: 2;
+    }
+   #large-div-college{
+       margin-bottom: 700px;
+   }
     #work-experience-section{
         margin-top: 290px;
         
     }
-    #work-experience-title{
+    #work-experience-title,
+    #college-title{
         font-size: 100px;
        
     }
-    .work-experience{
-       
-        
+    #college-title{
+        text-align: right;
+    }
+    .work-experience{ 
         margin-left: 125px;
         margin-right: 25px;
-        margin-bottom: 1000px;
-        height: 1200px;
+        margin-bottom: 1300px;
+        height: 1600px;
        
     }
-    #block{
+    #block,
+    #block-college{
         padding: 20px;
         width: 10%;
         background: #2b5329;
@@ -1226,13 +1311,26 @@ img{
         top: -40%;
         left: 2%;
     }
+    #block-college{
+        background: #800000;
+        left: 66%;
+        top: -6%;
+    }
    
-    #large-div{
+    #large-div,
+    #large-div-pat,
+    #large-div-college{
         display: block;
         width: 100%;
         margin-top: 1300px;
         position: relative;
         
+    }
+    #large-div-college{
+        margin-top: 300px;
+    }
+    #large-div-pat{
+        padding-top: 100px;
     }
     .large-div-img{
         display: block;
@@ -1247,6 +1345,30 @@ img{
         filter: none;
       
     }
+    .large-div-img-pat{
+        opacity: 1;
+        width: auto;
+        height: 500px;
+        padding-top: 90px;
+        position: relative;
+        display: block;
+        margin-top: -500px;
+        filter: none;
+        margin-left: 100px;
+        
+    }
+    .large-div-img-college{
+        opacity: 1;
+        width: auto;
+        height: 500px;
+        padding-top: 90px;
+        position: relative;
+        display: block;
+        margin-top: -500px;
+        filter: none;
+        margin-left: -450px;
+    }
+   
     .large-div-img:hover{
         border: 20px solid #013220
 
@@ -1310,19 +1432,57 @@ img{
         margin-left: 10px;
         
     }
+    .job-title-date-pat{
+        height: 160px;
+        width: 250px;
+        top: -170%;
+        text-align: center;
+        margin-left: 10px;
+        z-index: 2;
+        position: absolute;
+    }
+    .job-title-date-college{
+        height: 160px;
+        width: 250px;
+        top: 14%;
+        left: 65%;
+        text-align: center;
+        margin-left: 10px;
+        z-index: 2;
+        position: absolute;
+    }
     .large-title,
-    .large-date{
+    .large-date,
+    .large-date-pat{
         padding-top: 10px;
         position: relative;
         color: #2b5329;
         font-size: 40px;
         display: block;
     }
-    .large-date{
+    .large-title-pat,
+    .large-date-pat,
+    .large-title-college,
+    .large-date-college{
+        padding-top: 10px;
+        position: relative;
+        color: #2d9da9;
+        font-size: 40px;
+        display: block;
+    }
+    .large-date-college,
+    .large-title-college{
+        color: #800000;
+    }
+    .large-date,
+    .large-date-pat,
+    .large-date-college{
         font-size: 18px;
         font-weight: bolder;
     }
-    .job-duties-large{
+    .job-duties-large,
+    .job-duties-large-pat,
+    .job-duties-large-college{
         display: block;
         background: #7e685a;
         height: 600px;
@@ -1334,11 +1494,28 @@ img{
         opacity: 0;
         transition: ease-in 3s;
     }
+    .job-duties-large-pat,
+    .job-duties-large-college{
+        background: #1f2833;
+        height: 400px;
+        color: #66fcf1;
+        top: 210%;
+        opacity: 1;
+    }
+    .job-duties-large-college{
+        height: 500px;
+        background: #800000;
+        color: white;
+        top: 10%;
+    }
     .job-duties-large:hover{
         border: solid 10px #013220;
         transition : .2s ease-in;
     }
-    
+    .job-duties-large-pat:hover{
+        border: solid 10px #2d9da9;
+        transition: .2s ease-in;
+    }
     #overlay-duties{
         display: none;
         background:#013220;
@@ -1457,7 +1634,8 @@ img{
     }
 
     
-    .jd{
+    .jd,
+    .jd-pat{
         font-size: 50px;
         font-family: 'Poppins', 'sans=serif';
         text-align: center;
@@ -1465,11 +1643,17 @@ img{
         margin-top: -65px;
         font-weight: 500;
     }
-    .jd-ul{
+    .jd-pat{
+        color: #0B0C10;
+        
+    }
+    .jd-ul,
+    .jd-ul-pat{
         list-style: none;
        
     }
-    .jd-li{
+    .jd-li,
+    .jd-li-pat{
         margin-right:10px;
         padding-top: 40px;
         font-size: 20px;
@@ -1477,7 +1661,8 @@ img{
     #landtec-skills{
         display: none;
     }
-    .skills-large{
+    .skills-large,
+    .skills-large-pat{
         width: 750px;
         height: 400px;
         background: #679267;
@@ -1489,9 +1674,19 @@ img{
         transition: ease-in-out 4s;
         opacity: 0;
     }
+    .skills-large-pat{
+        top: 200%;
+        opacity: 1;
+        background: #2d9da9;
+    }
+
     .skills-large:hover{
         border: 15px solid #013220;
         transition: .1s ease;
+    }
+    .skills-large-pat:hover{
+        border: 15px solid #17252a;
+        transition: 1s ease;
     }
     .skills-title-large{
         color: #fff;
