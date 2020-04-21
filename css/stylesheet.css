@@ -967,7 +967,8 @@ img{
   margin-right: 35%;
 }
 #large-div,
-#large-div-pat
+#large-div-pat,
+#large-div-college
 {
     display: none;
     visibility: hidden;
@@ -1302,6 +1303,7 @@ img{
         height: 1600px;
        
     }
+    
     #block,
     #block-college{
         padding: 20px;
@@ -1503,10 +1505,12 @@ img{
         opacity: 1;
     }
     .job-duties-large-college{
-        height: 500px;
+        height: 420px;
         background: #800000;
         color: white;
-        top: 10%;
+        top: 70%;
+        left: 5%;
+        width: 40%;
     }
     .job-duties-large:hover{
         border: solid 10px #013220;
@@ -1635,7 +1639,8 @@ img{
 
     
     .jd,
-    .jd-pat{
+    .jd-pat,
+    .jd-college{
         font-size: 50px;
         font-family: 'Poppins', 'sans=serif';
         text-align: center;
@@ -1648,12 +1653,14 @@ img{
         
     }
     .jd-ul,
-    .jd-ul-pat{
+    .jd-ul-pat,
+    .jd-ul-college{
         list-style: none;
        
     }
     .jd-li,
-    .jd-li-pat{
+    .jd-li-pat,
+    .jd-li-college{
         margin-right:10px;
         padding-top: 40px;
         font-size: 20px;
@@ -1746,6 +1753,35 @@ img{
     #skills-team{
         left: 75%;
         
+    }
+    .final-year-project{
+        background: url('../images/final-year.png') no-repeat;
+        height: 500px;
+        width: auto;
+        margin-top: 20px;
+        margin-left: 700px;
+    }
+    .final-year-btn{
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 400px;
+        margin-left:85px;
+        background: #fff;
+       
+        border: 3px solid #800000;
+        font-family: 'Poppins', 'sans-serif';
+    }
+    .final-btn{
+        color: #800000;
+    }
+    .final-btn:hover{
+        color: #fff;
+    }
+    .final-year-btn:hover{
+        background: #800000;
+       
     }
     .job-title-date{
         animation-duration: 3s;
