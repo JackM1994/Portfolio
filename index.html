@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
@@ -67,32 +69,46 @@
        <div class="container-intro container-fluid text-sm-center" id="web-description">
        <span class="block"></span> 
         <h2 class="display-2" id="services">
-           Services<span id="block-span"></span>
+           About<span id="block-span"></span>
          </h2>
           <!-- Web Development -->
-         <h3 id="web-header">Web Development</h3><span class="white-block"></span>
+          <img class ="dev-icon" src="images/web (1).png" alt="laptop">
+         <h3 id="web-header">Web Developer</h3>
          <p id="web-dev-description">
-           As a Web Developer, I take design and programming and mix them together.
-           For backend design, I use node.js and SQL 
-           but primarily focus on the front-end side. Using JavaScript as my core language to create more fluid transition and effects into my websites. 
-           I touch it up with CSS to make the website aesthetically pleasing to the viewer.
+           I like to code all my websites from scratch. I use markup languages like<i><b> HTML</b></i>  to create friendly user websites. 
+           I start by creating mockups and prototypes to show my clients or when I am doing small projects for myself.
+            It gives the client an understanding of how the website will appear and saves huge amount of coding time.
+            For styling my webpages and websites, I use <i><b>CSS</b> </i> and <i><b>SASS</b></i>. For interactions and animations, I use <i><b>JavaScript</b></i> and <i><b>JQuery</b></i> 
+            They make the website and webpages more exciting and just add nice visual effect.
+
          </p>
-         <img src="images/laptop.png" alt="laptop" width="290px" height="340px">
+        
        </div>
+      
        <div class="container-intro container-fluid text-sm-center" id="mobile-development">
-        <h3 id="mobile-header">Mobile Development</h3><span class="white-block-1"></span>
-        <p id="mobile-dev-description">
-          As a Mobile Developer, I develop mobile applications for Android software.
-          Due mainly to my knowlege with programming languages Java and XML which are widely used for android. Using Android studio as my main software, 
-          I can make crisp, stylish applications. 
+          <img class ="mobile-icon" src="images/communications.png" alt="laptop">
+        <h3 id="mobile-header">Mobile Developer</h3>
+        <p id="mobile-dev-description" data-aos="fade-right">
+          I develop mobile applications for Android software using Android Studio.
+          I find this program user-friendly, anything I code I can see in real time which makes it perfect for showing clients. 
+          I make protoypes and mockups for the client to see what their mobile application will look and possible, how it will run. 
+          The languages I use are <i>Java </i> and <i>XML</i>. I find these languages are perfect for developing Android Applications.
         </p>
-        <img class="mobile" src="images/mobile.png" alt="mobile" width="550px" height="400px">
+     
        </div>
        <div class="container-intro container-fluid text-sm-center" id="maintenance">
-        <h3 id="maintenance-header">Maintenance</h3><span class="white-block-2"></span>
-        <p id="main-dev-description">
-          Maintaining websites and mobile applications by adding new features. Keeping up to date ,
-          with new programs to help the website and mobile applications run faster, smoother and a greater performance.
+          <img class ="design-icon" src="images/laptop.png" alt="laptop">
+        <h3 id="maintenance-header">Designer</h3>
+        <p id="main-dev-description" data-aos="fade-left">
+        I opted for simple layouts, with very clean design and patterns. 
+        Making content easy to read and making any interaction smooth and seemless.
+       <p class="design" data-aos="fade-up">Design Tools</p>
+        <ol data-aos="fade-up"> 
+          <li>Pen and Paper</li>
+          <li>Sketch</li>
+          <li>Balsamiq</li>
+          <li>WebFlow</li>
+        </ol>
         </p>
       </div>
 
@@ -145,7 +161,7 @@
         
      </div>
      <p class="contact-info">I am available for 
-       freelance work at this time. I am also happy to 
+       freelance work. I am also happy to 
        help with any design enquires you may have.
                                     
      </p>
@@ -184,5 +200,8 @@
 <script src="js/letter-amination.js"></script>
 <script src="js/fade-in.js"></script>
 <script src="js/auto-typing.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

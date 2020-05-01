@@ -36,10 +36,6 @@ body{
     padding-top: 895px;
     overflow:hidden;
     transition: width 2s;
-   
-   
-    
-  
 
        
 }
@@ -193,22 +189,13 @@ body{
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
     opacity: 0;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     width: 100%;
     
 }
 
-.white-block{
-    height: 8px;
-    width: 60%;
-    position: absolute;
-    background: #fff;
-    top: 21.5%;
-    left: 20%;
-    opacity: 0;
-  
-}
+
 #web-dev-description{
     font-size: 18px;
     padding-top: 15%;
@@ -220,18 +207,30 @@ body{
     opacity: 0;
     
 }
-img{
-    position: absolute;
-    top: 62%;
-    left: 13%;
+
+.dev-icon,
+.mobile-icon,
+.design-icon{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;    
+}
+
+.mobile-icon{
+    margin-top: 380px;
 }
 
 #mobile-development{
-   
+  
     width: 100%;
     padding-bottom: 200px;
     margin-top: 0px;
     background-color: #d4a59a;
+    
   
 
 }
@@ -246,43 +245,23 @@ img{
     left: 2%;
     width: 45%;
     font-size: 36px; 1024px */
-    padding-top: 190px;
+    padding-top: 100px;
     align-items: center;
     text-align: center;
-   
     width: 100%;
-    opacity:0;
-   
-    
-  
-   
+    opacity:0; 
 }
-.white-block-1{
-    height: 8px;
-    width: 70%;
-    position: absolute;
-    background: #fff;
-    top: 44.5%;
-    left: 15%;
-    opacity: 0;
 
-}
 
 #mobile-dev-description{
-    /* font-size: 18px;
-    padding-top: 220px;
-    padding-left: 100px;
-    padding-right: 10px;
-    text-align: left;
-    width: 80%; 1024px */
     font-size: 18px;
-    padding-top: 15%;
+    padding-top: 20%;
     text-align: center;
     padding-left: 2%;
     padding-right: 2%;
     width: 100%;
     color: #fff;
-    opacity: 0;
+   
 
 }
 
@@ -307,7 +286,7 @@ img{
     color: #fff;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    padding-top: 150px;
+    padding-top: 50px;
     align-items: center;
     text-align: center;
    
@@ -315,20 +294,7 @@ img{
     opacity: 0;
 }
 
-.white-block-2{
-    height: 8px;
-    width: 100px;
-    /* position: absolute; */
-    background: #fff;
-    /* top: 61%;
-    left: 58%; */
-    opacity: 0;
-    position: absolute;
-    top: 78%;
-    left: 30%;
-    width: 40%;
 
-}
 
 #main-dev-description{
     /* font-size: 18px;
@@ -338,7 +304,7 @@ img{
     text-align: left;
     width: 80%; */
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     font-size: 18px;
     padding-top: 15%;
     text-align: center;
@@ -346,6 +312,26 @@ img{
     padding-right: 2%;
     width: 100%;
 }
+.design{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+ol{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+    list-style: circle;
+    padding-right: 12%;
+}
+.design-icon{
+    margin-top: 10px;
+  
+}
+
 
 
 
@@ -772,14 +758,14 @@ img{
 .scene-pat,
 .scene-college{
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: 40px 0;
     perspective: 600px;
-    border: #013220 solid 10px;
+    border: #ff7e5f solid 10px;
 }
 .scene-pat{
-    margin-top: -40px;
-    height: 565px;
+    margin-top: 10px;
+   
     border: #2d9da9 solid 10px;
 }
 .scene-college{
@@ -796,8 +782,10 @@ img{
     cursor: pointer;
     position: relative;
     perspective: 600px;
+  
    
 }
+
 .card.is-flipped {
     transform: rotateY(180deg);
   }
@@ -819,12 +807,17 @@ img{
     backface-visibility: hidden;
 }
 .flip-card-front{
-    background: url(../images/landtec-cover.jpeg) no-repeat center ;
-    padding-bottom: 400px;
+    background: url(../images/spanishGuide.png) no-repeat left ;
+    background-position: -500px;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
 .flip-card-front-2{
-    background: url(../images/patricks-well.jpg)no-repeat;
+    background: url(../images/gazGuide.png)no-repeat;
     height: 800px;
 }
 .flip-card-front-college{
@@ -860,7 +853,7 @@ img{
 }
 .view-job:hover{
     transition: .3s ease;
-    background: #2b5329;
+    background: #800000;
 }
 .view-degree:hover{
     transition: .3s ease;
@@ -888,13 +881,14 @@ img{
 .job-title-pat,
 .college-title{
     color: #000;
-    font-size: 22px;
-    margin-top: 20px;
-    margin-right: 40px;
+    font-size: .80em;
+    margin-top: 120px;
+   text-align: center;
     z-index: 2;
+    font-family: 'Reem Kufi', sans-serif;
 }
 
-.job-title-pat
+.job-title-pat,
 .college-title{
     margin-top: -105px;
     padding-top: -20px;
@@ -905,7 +899,8 @@ img{
     margin-top: 0px;
     font-size: 18px;
     color: #000;
-    margin-right: 60px;
+   
+    text-align: center;
 }
 .job-duties,
 .job-duties-pat,
@@ -926,11 +921,24 @@ img{
 .points,
 .point,
 .points-pat,
-.point-pat{
+.point-pat,
+.web-site-desc{
     margin-right: 20px;
     margin-top: 10px;
     color: #000;
    
+}
+.web-site-desc,
+.website-address{
+    font-size: .42em;
+    font-family: 'Poppins','sans-serif';
+    color: #800000;
+    margin: auto 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.website-address{
+    font-size: .39em;
 }
 
 #landtec-skills{
@@ -1015,9 +1023,7 @@ img{
     .email-icon{
         margin-left: 44%;
     }
-    .white-block-1{
-        top: 46%;
-    }
+   
     .row{
         display: flex;
         flex-flow: wrap;
@@ -1120,7 +1126,7 @@ img{
     }
     #web-header{
     position: absolute;
-    top:13%;
+    top:25%;
     right:0;
     bottom:10%;
     left: 27%;
@@ -1128,26 +1134,38 @@ img{
     font-size: 36px;
     opacity: 0;
     }
-    .white-block{
-        width: 10%;
-        top: 31%;
-        left: 36%;
+    .dev-icon,
+    .mobile-icon,
+    .design-icon{
+        margin: auto 0;
+        display: block;
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+        color: white;
+        margin-top: 20px;
+        margin-left: 45%;
     }
+    .mobile-icon{
+       margin-left: 40%;
+        margin-top: 140px;
+    }
+    .design-icon{
+        margin-top: 140px;
+    }
+   
 
     #web-dev-description{
         font-size: 18px;
-        padding-top: 220px;
-        padding-left: 160px;
-        padding-right: 50px;
-        text-align: left;
-        width: 80%; 
+        margin: auto 0;
+        padding-top: 160px;
+        text-align: center;
+        padding-left: 80px;
+        padding-right: -80px;
+       
         
     }
-    img{
-        left: 35%;
-        -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-        filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
-    }
+   
     #mobile-development,
     #maintenance,
     #photo-gallery,
@@ -1166,7 +1184,7 @@ img{
     }
     #mobile-header{
         position: absolute;
-        top:43%;
+        top:57%;
         right:0;
         bottom:10%;
         left: 2%;
@@ -1175,16 +1193,17 @@ img{
     }
     #mobile-dev-description{
         font-size: 18px;
-        padding-top: 220px;
-        padding-left: 100px;
-        padding-right: 10px;
-        text-align: left;
-        width: 80%; 
+        padding-top: 420px;
+        display: block;
+        margin: auto 0;
+        margin-left: -350px;
+        text-align: center;
+      
     }
    
     #maintenance-header{
     position: absolute;
-    top:46.2%;
+    top:60%;
     right:0;
     bottom:10%;
     left: 53%; 
@@ -1195,32 +1214,21 @@ img{
 
     #main-dev-description{
         font-size: 18px;
-        padding-top: 220px;
-        padding-left: 100px;
-        padding-right: 10px;
-        text-align: left;
-        width: 80%;
+        padding-top: 420px;
+        margin: auto 0;
+        display: block;
+        margin-left: -280px;
+        padding-right: 30px;
+        width: 110%;
+        text-align: center;
+
+       
+    }
+    .design,
+     ol{
+        margin-top: 500px;
     }
 
-    .white-block-1{
-        width: 10%;
-        top: 63%;
-        left: 10%;
-    }
-    .white-block-2{
-        width: 10%;
-        top: 63%;
-        left: 65%;
-        
-        
-    }
-
-    .mobile{
-        top: 86%;
-        left: 18%;
-        width: 400px;
-        height: 350px;
-    }
     #css-guide{
         border-right: 2px solid #000;
     }
