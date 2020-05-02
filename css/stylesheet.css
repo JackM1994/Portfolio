@@ -783,8 +783,8 @@ ol{
     position: relative;
     perspective: 600px;
   
-   
 }
+
 
 .card.is-flipped {
     transform: rotateY(180deg);
