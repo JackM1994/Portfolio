@@ -1401,7 +1401,7 @@ ol{
           background-image: url("../images/spanishGuide.png"); 
       }
       .slideshow-gaa li:nth-child(1) span{
-          background-image: url("../images/gazGuide.png");
+          background-image: url("../images/gaz-header.png");
       }
 
 
@@ -1410,7 +1410,7 @@ ol{
           animation-delay: 6s; 
       }
       .slideshow-gaa li:nth-child(2) span {
-          background-image: url("../images/about-gaa.png");
+          background-image: url("../images/speed.png");
           animation-delay: 6s;
       }
 
@@ -1420,7 +1420,7 @@ ol{
           animation-delay: 12s; 
       }
       .slideshow-gaa li:nth-child(3) span {
-          background-image: url("../images/service-gaa.png");
+          background-image: url("../images/stronger.png");
           animation-delay: 12s;
       }
 
@@ -1430,7 +1430,7 @@ ol{
       }
 
       .slideshow-gaa li:nth-child(4) span {
-          background-image: url("../images/photo-gaa.png");
+          background-image: url("../images/nutrition.png");
           animation-delay: 18s;
       }
 
@@ -1439,7 +1439,7 @@ ol{
           animation-delay: 24s; 
       }
       .slideshow-gaa li:nth-child(5) span{
-          background-image: url("../images/free-gaa.png");
+          background-image: url("../images/form-gaz.png");
           animation-delay: 24s;
       }
       
